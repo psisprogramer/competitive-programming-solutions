@@ -9,7 +9,7 @@ Este repositorio contiene las soluciones para los problemas de la competencia de
 
 | Problema | Nombre | Enfoque / Algoritmo Principal | Complejidad |
 | :---: | :--- | :--- | :---: |
-| **A** | Simulación ERIS | Álgebra Lineal y Cálculo Vectorial Analítico | $\mathcal{O}(1)$ |
+| **A** | Ecosistema de Insectos | Indexación Espacial mediante Hash Maps (Diccionarios) | $\mathcal{O}(I)$ |
 | **B** | Optimización de Baúles | Max-Heap (`heapq`) con Desempate Lexicográfico | $\mathcal{O}(K \log N)$ |
 | **C** | Competición con Compresión | Compresión de Entropía Híbrida (`zlib`) a bajo nivel | $\mathcal{O}(N \times M)$ |
 | **D** | Desembocadura | Diseño de Estructura de Árbol Mínima Simétrica | $\mathcal{O}(1)$ |
@@ -19,10 +19,10 @@ Este repositorio contiene las soluciones para los problemas de la competencia de
 
 ## Detalles de Implementación
 
-### Problema A: Simulación ERIS
-* **Descripción:** Resolución de sistemas de trayectorias y órbitas tridimensionales bajo restricciones físicas de colisión o intercepción.
+## Problema A: Ecosistema de Insectos
+**Descripción:** Simulación eficiente de las interacciones y movimientos de una población densa de insectos en un entorno delimitado.
 
-* **Estrategia:** Se evitó el uso de simulaciones paso a paso (métodos numéricos lentos) implementando una solución analítica pura basada en matrices de transformación y cálculo vectorial directo. Permite procesar miles de coordenadas en tiempo constante.
+**Estrategia:**Se sustituyó la comparación cuadrática de elementos por un enfoque de Spatial Hashing, agrupando dinámicamente a los insectos en un diccionario por sus coordenadas (x, y). Esto redujo drásticamente el espacio de búsqueda para las interacciones biológicas, permitiendo ejecuciones directas en tiempo lineal.
 
 ### Problema B: Optimización de Baúles
 * **Descripción:** Encontrar las dimensiones que maximicen la superficie total de un paralelepípedo a partir de tres listas de números, aplicando un criterio estricto de desempate lexicográfico[cite: 3].
